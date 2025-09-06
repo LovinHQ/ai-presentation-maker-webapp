@@ -1,21 +1,39 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <div className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <div className="mb-2 tracking-[-.01em]">
-            To purchase this domain, please contact us at{" "}
-            <a href="mailto:support@aipresentationmaker.app">
-              <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex items-center justify-center p-4">
+      <div className="max-w-2xl mx-auto text-center">
+        {/* Hero Section */}
+        <div className="mb-12 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 leading-tight">
+            Domain Available for Purchase
+          </h1>
+        </div>
+
+        {/* Contact Card */}
+        <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-8 md:p-12 backdrop-blur-sm text-center">
+          <div className="mb-6">
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Interested in acquiring this premium domain? We&apos;d love to
+              hear from you.
+            </p>
+          </div>
+
+          <div className="space-y-4 text-center">
+            <p className="text-gray-700 font-medium">
+              Contact us to discuss pricing and transfer details:
+            </p>
+
+            <div className="flex justify-center">
+              <a
+                href="mailto:support@aipresentationmaker.app"
+                className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:from-blue-600 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              >
                 support@aipresentationmaker.app
-              </code>
-            </a>
-            .
+              </a>
+            </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
   );
 }
